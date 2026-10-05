@@ -110,7 +110,7 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.memtrack-service.mediatek-mali
+    android.hardware.memtrack-service.mediatek
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -193,7 +193,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.property_source_order=odm,vendor,product,system_ext,system
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/import.prop:$(TARGET_COPY_OUT_ODM)/etc/import.prop
+    $(LOCAL_PATH)/configs/import.prop:$(TARGET_COPY_OUT_VENDOR)/etc/import.prop
 
 # Permissions
 PRODUCT_COPY_FILES += \
