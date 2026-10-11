@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
     libruy.vendor \
     libtextclassifier_hash.vendor
     
+    
 # Media
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
@@ -381,6 +382,8 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+# NFC
+$(call inherit-product, device/tecno/KL5/nfc/nfc.mk)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/tecno/KL5/KL5-vendor.mk)

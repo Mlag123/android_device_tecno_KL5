@@ -1,0 +1,27 @@
+cc_prebuilt_binary {
+    name: "android.hardware.nfc_snxxx@1.2-service",
+    srcs: ["android.hardware.nfc_snxxx@1.2-service"],
+    vendor: true,
+    relative_install_path: "hw",
+    init_rc: ["android.hardware.nfc_snxxx@1.2-service.rc"],
+    strip: {
+        none: true,
+    },
+    shared_libs: [
+        "android.hardware.nfc@1.0",
+        "android.hardware.nfc@1.1",
+        "android.hardware.nfc@1.2",
+        "libbase",
+        "libbinder_ndk",
+        "libc++",
+        "libc",
+        "libdl",
+        "libhardware",
+        "libhidlbase",
+        "liblog",
+        "libm",
+        "libutils",
+        "nfc_nci_nxp_snxxx",
+        "vendor.nxp.nxpnfc@2.0",
+    ],
+}
