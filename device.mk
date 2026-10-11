@@ -135,17 +135,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio
 
+# Camera / DNG
+#PRODUCT_PACKAGES += \
+#    libdng_sdk.vendor
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
 # Health
-PRODUCT_PACKAGES += \
-    android.hardware.health-V1-ndk \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
+ PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
+
+
+# Health
+#PRODUCT_PACKAGES += \
+#   android.hardware.health-V1-ndk \
+#    android.hardware.health@2.1-impl \
+#    android.hardware.health@2.1-impl.recovery \
+#    android.hardware.health@2.1-service
 
 # HIDL 
 PRODUCT_PACKAGES += \
