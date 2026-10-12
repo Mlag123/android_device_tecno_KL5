@@ -38,5 +38,7 @@
 # Extcon
 /sys/devices/platform/extcon_usb/extcon/extcon0/cable.1/state                           u:object_r:sysfs_OTG_STATE_file:s0
 
+
 # NFC
-/dev/pn553    u:object_r:pn553_device:s0
+/dev/pn553                                                                              u:object_r:pn553_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service                u:object_r:hal_nfc_default_exec:s0
