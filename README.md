@@ -1,1 +1,2 @@
-# Android Device tree for the Tecno Spark 30C
+# DEPRECATED
+## Android Device tree for the Tecno Spark 30C
